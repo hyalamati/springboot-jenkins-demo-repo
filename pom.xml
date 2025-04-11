@@ -56,14 +56,18 @@
 				<version>3.2.2</version>
 				<executions>
 					<execution>
+						<id>checkstyle-report</id>
 						<phase>verify</phase>
 						<goals>
 							<goal>checkstyle</goal>
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<configLocation>sun_checks.xml</configLocation>
+					<outputFileFormat>xml</outputFileFormat>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
