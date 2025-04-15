@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>springbootdemo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>v.1.1</version>
 	<name>springbootdemo</name>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
@@ -66,6 +66,17 @@
 				<configuration>
 					<configLocation>sun_checks.xml</configLocation>
 					<outputFileFormat>xml</outputFileFormat>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<formats>
+						<format>xml</format>
+						<format>html</format>
+					</formats>
 				</configuration>
 			</plugin>
 		</plugins>

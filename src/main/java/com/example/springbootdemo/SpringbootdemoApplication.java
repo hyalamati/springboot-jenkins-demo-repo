@@ -12,10 +12,10 @@ public class SpringbootdemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootdemoApplication.class, args);
 	}
-	
+
 	@GetMapping("/")
-    public String hello() {
-      return String.format("<h1>Hello There!!! Welcome to my project</h1>");
+	public String hello() {
+		return String.format("<h1>Hello There!!! Welcome to my project</h1>");
 	}
 
 }
